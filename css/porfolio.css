@@ -1,0 +1,317 @@
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    background-color: black;
+   
+  }
+  .contenedor-gallery {
+    column-count: 3;
+    width: 100%;
+    opacity: 0;
+    transform: translatey(100%);
+    transition: opacity 1.s ease-in-out, transform 1.s ease-in-out;
+   
+  }
+
+  .imagenes-porfolio {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: scale 350ms ease, opacity 350ms linear;
+    margin-top: 10px;
+   
+  }
+  
+  .aparecer-gallery {
+    opacity: 1;
+    transform: translatey(0%);
+  
+  }
+ 
+  .gallery:has(.img-container:hover) .img-container:not(:hover) {
+    scale: .9;
+    opacity: .7;
+  }
+
+  
+  .container-porfolio .texto-porfolio {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 70px;
+    color: crimson;
+    left: 50%;
+    transform: translateY(-220%);
+    transition: all 0.9s;
+  }
+  .container-porfolio:hover .texto-porfolio{
+    top: 0;
+    transform: translateY(0%);
+    color: crimson;
+  
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+  
+  }
+  .imagen1{
+    margin-top: 0;
+  }
+  
+  .img-content {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.1s ease-in-out 0.1s ;
+    
+    
+  }
+  .img-content .titulo-porfolio {
+    color:black;
+    font-size: 28px;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translateY(-120%);
+    transition: all 0.9s;
+  }
+  .container-porfolio:hover .titulo-porfolio {
+    top: 0;
+    transform: translateY(0%);
+  
+  }
+  
+  .img-content a button{
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border: px solid crimson;
+    border-radius: 0;
+    background-color: transparent;
+    color:black;
+    top: -50%;
+    left: -50%;
+    transform: translateY(320%);
+    transition: all 0.6s;
+  
+  }
+  .container-porfolio:hover a button {
+    top: 0;
+   
+    transform: translateY(0%);
+    color: black;
+  }
+
+  .a-boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+  }
+   a:hover button:hover{
+    color: white;
+    background-color: crimson;
+  }
+  .img-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 1;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.1s ease-in-out;
+  }
+  .img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .img-container:hover .img-content {
+    opacity: 1;
+    top: 50%;
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      height: auto;
+      margin: auto;
+    
+      /* Espacio de 200px entre los contenedores */
+      background-color: black;
+    }
+    
+    .contenedor-gallery {
+      column-count: 3;
+      column-gap: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transform: translatey(0%);
+      transition: opacity 2.5s ease-in-out, transform 1.5s ease-in-out;
+    }
+    .aparecer-gallery {
+      opacity: 1;
+      transform: translatey(10%);
+    }
+
+    .imagenes-porfolio {
+
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      transition: scale 350ms ease, opacity 350ms linear;
+      margin: auto;
+    }
+    
+
+
+    .container-porfolio .texto-porfolio {
+      text-align: center;
+      font-size: 10px;
+      font-weight: 100;
+      margin-bottom: 70px;
+      color: crimson;
+      left: 50%;
+      transform: translateY(-220%);
+      transition: all 0.9s;
+    }
+    .container-porfolio:hover .texto-porfolio{
+      top: 0;
+      transform: translateY(0%);
+      color: crimson;
+    
+    }
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      position: relative;
+    
+    }
+    
+    .img-content {
+      position: absolute;
+      opacity: 0;
+      z-index: 2;
+      text-align: center;
+      transition: all 0.1s ease-in-out 0.1s ;
+      
+      
+    }
+    .img-content .titulo-porfolio {
+      color:black;
+      font-size: 11px;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      margin-top: -40px;
+      transform: translateY(-100%);
+      transition: all 0.9s;
+    
+    }
+    .container-porfolio:hover .titulo-porfolio {
+      top: 0;
+      transform: translateY(0%);
+    
+    }
+    
+    .img-content a button{
+      font-size: 9px;
+      width: 100%;
+      height: 30px;
+      border: px solid crimson;
+      border-radius: 0;
+      background-color: transparent;
+      color:black;
+      top: -50%;
+      left: -50%;
+      transform: translateY(0%);
+      transition: all 0.6s;
+    
+    }
+    .container-porfolio:hover a button {
+      top: 0;
+     
+      transform: translateY(0%);
+      color: black;
+    }
+  
+    .a-boton{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      margin: auto;
+      margin-top: -40px;
+      font-size: 10px;
+    height: 12px;
+  
+    }
+     a:hover button:hover{
+      color: white;
+      background-color: crimson;
+    }
+  
+
+    .img-container::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      opacity: 1;
+      z-index: 1;
+      transform: scaleY(0);
+      transform-origin: 100% 100%;
+      transition: all 0.1s ease-in-out;
+    }
+    .img-container:hover::after {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    .img-container:hover .img-content {
+      opacity: 1;
+      top: 50%;
+    }
+
+
+
+  }

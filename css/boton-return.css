@@ -1,0 +1,53 @@
+.boton-return {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+  
+  }
+  
+  .boton-return a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  
+    background-color: black;
+    margin: auto;
+  }
+  
+  .return {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: auto;
+    border-radius: 5px;
+   
+  
+  }
+  
+  .return:hover {
+  
+    box-shadow: 2px 2px 5px rgba(252, 252, 252, 0.973);
+    /* Sombra con desplazamiento X de 2px, desplazamiento Y de 2px, difuminación de 5px y color RGBA */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima del botón */
+  }
+  @media (max-width: 768px) {
+
+
+    .return {
+      width: 10%;
+      margin: 0;
+      margin-top: 50px;
+     
+     }
+    
+  }

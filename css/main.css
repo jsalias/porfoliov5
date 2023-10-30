@@ -1,0 +1,504 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 500px;
+    background-color: black;
+  
+  }
+  
+  .contenedor-foto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background-color: black;
+  
+  }
+  
+  .foto1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: auto;
+  }
+  
+  .titulo-quien {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .texto-quien {
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+  
+    color: white;
+  }
+  
+  .contenedor-barras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 45%;
+    height: 300px;
+    background-color: black;
+  }
+  
+  .barra-completa {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.918);
+    border: solid 1px chartreuse;
+  
+  
+  }
+  
+  
+  .porcentaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 23px;
+    background-color: rgba(255, 255, 255, 0.918);
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    color: black;
+    font-weight: 600;
+  
+  
+  
+  }
+  
+  .lenguaje {
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 23px;
+    color: white;
+    font-weight: 600;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #021027;
+    border: solid 1px chartreuse;
+  }
+  
+  .barra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: rgba(255, 255, 255, 0.918);
+  
+  }
+  
+  .barra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 90%;
+    }
+  
+    100% {
+      width: 90%;
+    }
+  }
+  
+  .barra1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .barra1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange1 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange1 {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 80%;
+    }
+  
+    100% {
+      width: 80%;
+    }
+  }
+  
+  
+  .barra2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .barra2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange2 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange2 {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 70%;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  .barra3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .barra3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange3 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange3 {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 70%;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  
+  .barra4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .barra4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange4 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange4 {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 60%;
+    }
+  
+    100% {
+      width: 60%;
+    }
+  }
+  
+  .barra5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 25px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .barra5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sin ancho */
+    height: 100%;
+    background-color: deepskyblue;
+    /* Color de la parte coloreada */
+    animation: colorChange5 1.5s linear forwards;
+    /* La animación se detendrá en el 80% */
+  }
+  
+  /* Define la animación */
+  @keyframes colorChange5 {
+    0% {
+      width: 0;
+    }
+  
+    80% {
+      width: 70%;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  .contenedor-foto {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .contenedor-barras {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2.5s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .aparecer-izquierda {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  .aparecer-derecha {
+    opacity: 1;
+    transform: translateX(-0%);
+  }
+
+  @media (max-width: 768px) {
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 500px;
+      background-color: black;
+     
+  
+    
+    }
+    
+    .contenedor-foto {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      background-color: black;
+    
+    }
+    
+    .foto1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      height: auto;
+    }
+    
+    .titulo-quien {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: auto;
+      font-size: 25px;
+      color: white;
+    }
+    
+    .texto-quien {
+    
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: auto;
+    
+      color: white;
+    }
+    
+    .contenedor-barras {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      height: 300px;
+      background-color: black;
+    }
+    
+    .barra-completa {
+      margin: auto;
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.918);
+      border: solid 1px chartreuse;
+    
+    
+    }
+    
+    
+    .porcentaje {
+      height: 18px;
+    }
+    
+    .lenguaje {
+      height: 18px;
+     
+    }
+    
+    .barra, .barra1, .barra2,.barra3,.barra4,.barra5 {
+      height: 20px;
+    }  
+    
+    
+  }
+  

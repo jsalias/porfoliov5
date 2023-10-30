@@ -1,0 +1,182 @@
+#animatedTitle2{
+  margin-top: 55px;
+}
+  .texto-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    margin-top: 70px;
+    font-size: 20px;
+  }
+  
+  .contenedor-formulario {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    color: white;
+    background-color: black;
+  
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 380px;
+    color: white;
+    background-color: black;
+  
+    margin: auto;
+    margin-top: -30px;
+  }
+  
+  .cont-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #021027;
+    margin: auto;
+   
+  
+  
+  }
+  
+  #inputs {
+    padding: 15px;
+    margin-top: 6px;
+    background-color: #021027;
+    color: white;
+    font-size: 14px;
+    border: solid 1px white;
+  }
+  
+  input::placeholder {
+  
+    font-weight: 600;
+  }
+  
+  textarea::placeholder {
+  
+    font-weight: 600;
+  }
+  
+  .texto-mensaje {
+    height: 120px;
+  }
+  
+  .submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: black;
+    margin-top: -150px;
+    border-radius: 3px;
+ 
+  
+  }
+
+  
+  .boton2 {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+    font-size: 16px;
+    background-color: crimson;
+    width: 15%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    
+  }
+  
+  .boton2:hover {
+    box-shadow: 2px 2px 5px rgba(252, 252, 252, 0.973);
+    /* Sombra con desplazamiento X de 2px, desplazamiento Y de 2px, difuminación de 5px y color RGBA */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima del botón */
+  }
+  
+  @media (max-width: 768px) {
+
+
+    .contenedor-formulario{
+      width: 100%;
+      height: 250px;
+      
+    }
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      height: 250px;
+      color: white;
+      background-color: black;
+      margin: auto;
+     
+    }
+    .cont-submit{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: black;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit {
+      width: 100%;
+      height: 25px;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+    
+      margin-top: 0px;
+      
+    }
+
+    .boton2 {
+      display: flex;
+      flex-direction: row;
+      border: solid 1px white;
+      margin: auto;
+      margin-left: 210px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      background-color: crimson;
+      width:30%;
+      height: 20px;
+      justify-content: center;
+      color: white;
+      border-radius: 5px;
+     
+      
+    
+    }
+    .texto-mensaje {
+      height: 50px;
+    }
+.texto-contact{
+  font-size: 14px;
+  margin: 0;
+}
+    
+  }
+  

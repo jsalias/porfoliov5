@@ -1,0 +1,134 @@
+.bandera {
+    margin: auto;
+  }
+
+  #mainNav1 {
+    margin: 0;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+  
+    /* Posición absoluta dentro del contenedor-blanco */
+  
+  }
+  
+  #mainNav1 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+  
+  }
+  
+  #mainNav1 ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    background-color: transparent;
+  }
+  
+  
+  #mainNav1 ul li span {
+  
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  #mainNav1 ul li span img {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  
+  
+  }
+  
+  
+  .en {
+    color: #021027;
+    margin-bottom: 5px;
+    margin-left: 18px;
+  }
+  
+  .es {
+    color: blueviolet;
+    margin-bottom: 5px;
+  }
+  
+  .check {
+    position: relative;
+    width: 26px;
+    margin: 20px;
+    margin-top: 15px;
+  }
+  
+  .check:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 25px;
+    margin-top: 0px;
+  }
+  
+  .check::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: crimson;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: solid 2px yellow;
+    box-sizing: border-box;
+    margin-top: 0px;
+  
+  }
+  
+  .check:checked:after {
+    left: 25px;
+    border: solid 2px white;
+    margin-top: 0px;
+  
+  }
+  
+  .check:checked:before {
+    background: white;
+  
+  }
+  
+  
+  .container12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+  
+  }
+  
+  @media (max-width: 768px) {
+
+#boton{
+  margin-top: 8px;
+}
+    
+  }
+  
